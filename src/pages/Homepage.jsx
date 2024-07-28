@@ -19,7 +19,7 @@ const Homepage = () => {
                 if (data.carousel.length !== 0) {
                     setCarousel(data.carousel);
                 } else {
-                    const { data: { trendingRes, bollyRes, popRes } } = await axios.get('https://ytmusic-backend.vercel.app/homepage');
+                    const { data: { trendingRes, bollyRes, popRes } } = await axios.get('https://ytmusic-backendx.vercel.app/homepage');
                     setCarousel([trendingRes, bollyRes, popRes])
                 }
                 clearTracklist();
@@ -43,7 +43,7 @@ const Homepage = () => {
                     setWorkout(optionData.workout);
                     setFocus(optionData.focus);
                 } else {
-                    const { data: { commuteRes, relaxRes, energizeRes, workoutRes, focusRes, } } = await axios.get('https://ytmusic-backend.vercel.app/option');
+                    const { data: { commuteRes, relaxRes, energizeRes, workoutRes, focusRes, } } = await axios.get('https://ytmusic-backendx.vercel.app/option');
                     setCommute(commuteRes);
                     setRelax(relaxRes);
                     setEnergize(energizeRes);
